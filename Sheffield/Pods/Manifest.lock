@@ -1,0 +1,12 @@
+PODS:
+  - CoreStore (4.0.5)
+
+DEPENDENCIES:
+  - CoreStore
+
+SPEC CHECKSUMS:
+  CoreStore: 07e6cc86894eb80df9ce6fd0e54122df1ccaf531
+
+PODFILE CHECKSUM: 88a671bc91302a79321e12eaad8d280ec4bcda2c
+
+COCOAPODS: 1.1.1

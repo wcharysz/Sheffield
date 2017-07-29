@@ -1,0 +1,3 @@
+use_frameworks!
+target 'Sheffield'
+pod 'CoreStore'

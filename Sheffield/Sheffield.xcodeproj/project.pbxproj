@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C708EF2B309D33CDD067D38 /* Pods_Sheffield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD43FABAA7A194FB92F6930 /* Pods_Sheffield.framework */; };
 		CE797AD31F2CC230008B25CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797AD21F2CC230008B25CB /* AppDelegate.swift */; };
 		CE797AD51F2CC230008B25CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797AD41F2CC230008B25CB /* ViewController.swift */; };
 		CE797AD81F2CC230008B25CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE797AD61F2CC230008B25CB /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B020E6603F7011CA803A289 /* Pods-Sheffield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sheffield.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sheffield/Pods-Sheffield.debug.xcconfig"; sourceTree = "<group>"; };
+		AA023C277819934BC8ABA314 /* Pods-Sheffield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sheffield.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sheffield/Pods-Sheffield.release.xcconfig"; sourceTree = "<group>"; };
+		AAD43FABAA7A194FB92F6930 /* Pods_Sheffield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sheffield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797ACF1F2CC230008B25CB /* Sheffield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sheffield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797AD21F2CC230008B25CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE797AD41F2CC230008B25CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C708EF2B309D33CDD067D38 /* Pods_Sheffield.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78289CE71602FC3F27A08805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAD43FABAA7A194FB92F6930 /* Pods_Sheffield.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CAAE9A52BB32DCF43D69F76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B020E6603F7011CA803A289 /* Pods-Sheffield.debug.xcconfig */,
+				AA023C277819934BC8ABA314 /* Pods-Sheffield.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE797AC61F2CC230008B25CB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				CE797AE91F2CC231008B25CB /* SheffieldTests */,
 				CE797AF41F2CC231008B25CB /* SheffieldUITests */,
 				CE797AD01F2CC230008B25CB /* Products */,
+				8CAAE9A52BB32DCF43D69F76 /* Pods */,
+				78289CE71602FC3F27A08805 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE797AFA1F2CC231008B25CB /* Build configuration list for PBXNativeTarget "Sheffield" */;
 			buildPhases = (
+				CB6B76F6A767EAA38ADE91A5 /* [CP] Check Pods Manifest.lock */,
 				CE797ACB1F2CC230008B25CB /* Sources */,
 				CE797ACC1F2CC230008B25CB /* Frameworks */,
 				CE797ACD1F2CC230008B25CB /* Resources */,
+				5055A412DC8DF3A977F1E2E6 /* [CP] Embed Pods Frameworks */,
+				9182915BC9962D5EEA020725 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5055A412DC8DF3A977F1E2E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sheffield/Pods-Sheffield-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9182915BC9962D5EEA020725 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sheffield/Pods-Sheffield-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB6B76F6A767EAA38ADE91A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE797ACB1F2CC230008B25CB /* Sources */ = {
@@ -416,6 +491,7 @@
 		};
 		CE797AFB1F2CC231008B25CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B020E6603F7011CA803A289 /* Pods-Sheffield.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sheffield/Info.plist;
@@ -428,6 +504,7 @@
 		};
 		CE797AFC1F2CC231008B25CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA023C277819934BC8ABA314 /* Pods-Sheffield.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sheffield/Info.plist;
