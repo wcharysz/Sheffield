@@ -1,26 +1,96 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gqr-eq-7tf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item-->
+        <scene sceneID="Y2R-xc-QwV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController storyboardIdentifier="JourneysTableViewController" id="aem-FU-Qvn" customClass="JourneysTableViewController" customModule="Sheffield" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="G1w-kw-LvJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9m3-ex-Z1y">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9m3-ex-Z1y" id="drj-WR-FcV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aem-FU-Qvn" id="ETF-JQ-m9v"/>
+                            <outlet property="delegate" destination="aem-FU-Qvn" id="oZa-oJ-DGm"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="mNI-OI-8FW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehf-kN-u9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-298" y="586"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="QeE-8A-dHW">
+            <objects>
+                <viewController id="iFF-BY-zAc" customClass="MapViewController" customModule="Sheffield" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iSI-Ny-PmO"/>
+                        <viewControllerLayoutGuide type="bottom" id="yZk-7G-cya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cCY-zv-86a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-M5-csQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <connections>
+                                    <outlet property="delegate" destination="iFF-BY-zAc" id="suV-oG-v00"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Eae-M5-csQ" firstAttribute="top" secondItem="cCY-zv-86a" secondAttribute="top" id="cE1-gf-4mU"/>
+                            <constraint firstAttribute="trailing" secondItem="Eae-M5-csQ" secondAttribute="trailing" id="gYG-J4-kBY"/>
+                            <constraint firstAttribute="bottom" secondItem="Eae-M5-csQ" secondAttribute="bottom" constant="50" id="klF-2j-lzB"/>
+                            <constraint firstItem="Eae-M5-csQ" firstAttribute="leading" secondItem="cCY-zv-86a" secondAttribute="leading" id="yZG-VN-YpR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="mv7-aQ-MTu"/>
+                    <connections>
+                        <outlet property="mapView" destination="Eae-M5-csQ" id="cZE-fF-GRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEj-Yd-7xL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298.39999999999998" y="-106.59670164917542"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yya-ev-WmS">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="Gqr-eq-7tf" customClass="TabBarController" customModule="Sheffield" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="CAa-OZ-v22">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iFF-BY-zAc" kind="relationship" relationship="viewControllers" id="Ck1-fZ-USe"/>
+                        <segue destination="aem-FU-Qvn" kind="relationship" relationship="viewControllers" id="5pY-m4-Vxb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MU4-Dt-GeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1252" y="222"/>
         </scene>
     </scenes>
 </document>

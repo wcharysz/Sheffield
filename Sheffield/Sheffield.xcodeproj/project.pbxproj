@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		2C708EF2B309D33CDD067D38 /* Pods_Sheffield.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD43FABAA7A194FB92F6930 /* Pods_Sheffield.framework */; };
 		CE797AD31F2CC230008B25CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797AD21F2CC230008B25CB /* AppDelegate.swift */; };
-		CE797AD51F2CC230008B25CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797AD41F2CC230008B25CB /* ViewController.swift */; };
 		CE797AD81F2CC230008B25CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE797AD61F2CC230008B25CB /* Main.storyboard */; };
 		CE797ADB1F2CC230008B25CB /* Sheffield.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE797AD91F2CC230008B25CB /* Sheffield.xcdatamodeld */; };
 		CE797ADD1F2CC230008B25CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE797ADC1F2CC230008B25CB /* Assets.xcassets */; };
 		CE797AE01F2CC230008B25CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE797ADE1F2CC230008B25CB /* LaunchScreen.storyboard */; };
 		CE797AEB1F2CC231008B25CB /* SheffieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797AEA1F2CC231008B25CB /* SheffieldTests.swift */; };
 		CE797AF61F2CC231008B25CB /* SheffieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797AF51F2CC231008B25CB /* SheffieldUITests.swift */; };
+		CE797B071F2CCA65008B25CB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B061F2CCA65008B25CB /* TabBarController.swift */; };
+		CE797B091F2CCB21008B25CB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B081F2CCB21008B25CB /* MapViewController.swift */; };
+		CE797B0B1F2CCBC4008B25CB /* JourneysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B0A1F2CCBC4008B25CB /* JourneysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		AAD43FABAA7A194FB92F6930 /* Pods_Sheffield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sheffield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797ACF1F2CC230008B25CB /* Sheffield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sheffield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797AD21F2CC230008B25CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE797AD41F2CC230008B25CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		CE797AD71F2CC230008B25CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE797ADA1F2CC230008B25CB /* Sheffield.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sheffield.xcdatamodel; sourceTree = "<group>"; };
 		CE797ADC1F2CC230008B25CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		CE797AF11F2CC231008B25CB /* SheffieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheffieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797AF51F2CC231008B25CB /* SheffieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheffieldUITests.swift; sourceTree = "<group>"; };
 		CE797AF71F2CC231008B25CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE797B061F2CCA65008B25CB /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CE797B081F2CCB21008B25CB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CE797B0A1F2CCBC4008B25CB /* JourneysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +160,9 @@
 		CE797B031F2CC8F8008B25CB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE797AD41F2CC230008B25CB /* ViewController.swift */,
+				CE797B061F2CCA65008B25CB /* TabBarController.swift */,
+				CE797B081F2CCB21008B25CB /* MapViewController.swift */,
+				CE797B0A1F2CCBC4008B25CB /* JourneysTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -362,8 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE797ADB1F2CC230008B25CB /* Sheffield.xcdatamodeld in Sources */,
-				CE797AD51F2CC230008B25CB /* ViewController.swift in Sources */,
+				CE797B071F2CCA65008B25CB /* TabBarController.swift in Sources */,
 				CE797AD31F2CC230008B25CB /* AppDelegate.swift in Sources */,
+				CE797B091F2CCB21008B25CB /* MapViewController.swift in Sources */,
+				CE797B0B1F2CCBC4008B25CB /* JourneysTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
