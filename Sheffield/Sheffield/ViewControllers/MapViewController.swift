@@ -10,12 +10,18 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, ObjectWithViewModel {
     
     @IBOutlet weak var mapView: MKMapView!
-    let locationManager = CLLocationManager()
     
     var isTrackingEnabled = true
+    
+    lazy var viewModel: MapViewModel = {
+        let model = MapViewModel()
+        model.delegate = self
+        
+        return model
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +34,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidAppear(animated)
         
         if CLLocationManager.authorizationStatus() == .notDetermined {
-            locationManager.requestAlwaysAuthorization()
+            viewModel.locatioManager.requestAlwaysAuthorization()
         }
     }
 

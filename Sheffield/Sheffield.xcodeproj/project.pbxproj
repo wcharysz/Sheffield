@@ -18,6 +18,9 @@
 		CE797B071F2CCA65008B25CB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B061F2CCA65008B25CB /* TabBarController.swift */; };
 		CE797B091F2CCB21008B25CB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B081F2CCB21008B25CB /* MapViewController.swift */; };
 		CE797B0B1F2CCBC4008B25CB /* JourneysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B0A1F2CCBC4008B25CB /* JourneysTableViewController.swift */; };
+		CE797B0D1F2D208D008B25CB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B0C1F2D208D008B25CB /* MapViewModel.swift */; };
+		CE797B0F1F2D20C0008B25CB /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B0E1F2D20C0008B25CB /* ViewModelProtocol.swift */; };
+		CE797B111F2D2116008B25CB /* ObjectWithViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797B101F2D2116008B25CB /* ObjectWithViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		CE797B061F2CCA65008B25CB /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CE797B081F2CCB21008B25CB /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CE797B0A1F2CCBC4008B25CB /* JourneysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneysTableViewController.swift; sourceTree = "<group>"; };
+		CE797B0C1F2D208D008B25CB /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		CE797B0E1F2D20C0008B25CB /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		CE797B101F2D2116008B25CB /* ObjectWithViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectWithViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 			children = (
 				CE797B061F2CCA65008B25CB /* TabBarController.swift */,
 				CE797B081F2CCB21008B25CB /* MapViewController.swift */,
+				CE797B0C1F2D208D008B25CB /* MapViewModel.swift */,
 				CE797B0A1F2CCBC4008B25CB /* JourneysTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -171,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				CE797AD91F2CC230008B25CB /* Sheffield.xcdatamodeld */,
+				CE797B0E1F2D20C0008B25CB /* ViewModelProtocol.swift */,
+				CE797B101F2D2116008B25CB /* ObjectWithViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -370,8 +379,11 @@
 				CE797ADB1F2CC230008B25CB /* Sheffield.xcdatamodeld in Sources */,
 				CE797B071F2CCA65008B25CB /* TabBarController.swift in Sources */,
 				CE797AD31F2CC230008B25CB /* AppDelegate.swift in Sources */,
+				CE797B111F2D2116008B25CB /* ObjectWithViewModel.swift in Sources */,
 				CE797B091F2CCB21008B25CB /* MapViewController.swift in Sources */,
+				CE797B0F1F2D20C0008B25CB /* ViewModelProtocol.swift in Sources */,
 				CE797B0B1F2CCBC4008B25CB /* JourneysTableViewController.swift in Sources */,
+				CE797B0D1F2D208D008B25CB /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
