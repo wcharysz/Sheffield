@@ -41,7 +41,7 @@
 		AAD43FABAA7A194FB92F6930 /* Pods_Sheffield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sheffield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797ACF1F2CC230008B25CB /* Sheffield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sheffield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797AD21F2CC230008B25CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE797AD41F2CC230008B25CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE797AD41F2CC230008B25CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		CE797AD71F2CC230008B25CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE797ADA1F2CC230008B25CB /* Sheffield.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sheffield.xcdatamodel; sourceTree = "<group>"; };
 		CE797ADC1F2CC230008B25CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,13 +123,14 @@
 		CE797AD11F2CC230008B25CB /* Sheffield */ = {
 			isa = PBXGroup;
 			children = (
+				CE797B051F2CC922008B25CB /* Views */,
+				CE797B041F2CC91A008B25CB /* Models */,
+				CE797B031F2CC8F8008B25CB /* ViewControllers */,
 				CE797AD21F2CC230008B25CB /* AppDelegate.swift */,
-				CE797AD41F2CC230008B25CB /* ViewController.swift */,
 				CE797AD61F2CC230008B25CB /* Main.storyboard */,
 				CE797ADC1F2CC230008B25CB /* Assets.xcassets */,
 				CE797ADE1F2CC230008B25CB /* LaunchScreen.storyboard */,
 				CE797AE11F2CC230008B25CB /* Info.plist */,
-				CE797AD91F2CC230008B25CB /* Sheffield.xcdatamodeld */,
 			);
 			path = Sheffield;
 			sourceTree = "<group>";
@@ -150,6 +151,29 @@
 				CE797AF71F2CC231008B25CB /* Info.plist */,
 			);
 			path = SheffieldUITests;
+			sourceTree = "<group>";
+		};
+		CE797B031F2CC8F8008B25CB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE797AD41F2CC230008B25CB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE797B041F2CC91A008B25CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE797AD91F2CC230008B25CB /* Sheffield.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE797B051F2CC922008B25CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +612,7 @@
 				CE797AFC1F2CC231008B25CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE797AFD1F2CC231008B25CB /* Build configuration list for PBXNativeTarget "SheffieldTests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +621,7 @@
 				CE797AFF1F2CC231008B25CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE797B001F2CC231008B25CB /* Build configuration list for PBXNativeTarget "SheffieldUITests" */ = {
 			isa = XCConfigurationList;
@@ -604,6 +630,7 @@
 				CE797B021F2CC231008B25CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -614,7 +641,8 @@
 				CE797ADA1F2CC230008B25CB /* Sheffield.xcdatamodel */,
 			);
 			currentVersion = CE797ADA1F2CC230008B25CB /* Sheffield.xcdatamodel */;
-			path = Sheffield.xcdatamodeld;
+			name = Sheffield.xcdatamodeld;
+			path = ../Sheffield.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
