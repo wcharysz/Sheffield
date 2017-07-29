@@ -8,15 +8,28 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    let locationManager = CLLocationManager()
+    
+    var isTrackingEnabled = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        mapView.userTrackingMode = .followWithHeading
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            locationManager.requestAlwaysAuthorization()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,14 +38,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        if isTrackingEnabled {
+            mapView.setCenter(userLocation.coordinate, animated: true)
+        }
     }
-    */
-
 }

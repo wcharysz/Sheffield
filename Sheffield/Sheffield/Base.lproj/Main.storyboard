@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Journeys Table View Controller-->
         <scene sceneID="Y2R-xc-QwV">
             <objects>
                 <tableViewController storyboardIdentifier="JourneysTableViewController" id="aem-FU-Qvn" customClass="JourneysTableViewController" customModule="Sheffield" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,13 +32,13 @@
                             <outlet property="delegate" destination="aem-FU-Qvn" id="oZa-oJ-DGm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="mNI-OI-8FW"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="mNI-OI-8FW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehf-kN-u9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-298" y="586"/>
         </scene>
-        <!--Item 1-->
+        <!--Map-->
         <scene sceneID="QeE-8A-dHW">
             <objects>
                 <viewController id="iFF-BY-zAc" customClass="MapViewController" customModule="Sheffield" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-M5-csQ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-M5-csQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <connections>
                                     <outlet property="delegate" destination="iFF-BY-zAc" id="suV-oG-v00"/>
@@ -65,7 +65,7 @@
                             <constraint firstItem="Eae-M5-csQ" firstAttribute="leading" secondItem="cCY-zv-86a" secondAttribute="leading" id="yZG-VN-YpR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="mv7-aQ-MTu"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="mv7-aQ-MTu"/>
                     <connections>
                         <outlet property="mapView" destination="Eae-M5-csQ" id="cZE-fF-GRw"/>
                     </connections>
